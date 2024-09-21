@@ -1,0 +1,79 @@
+$primary-color: #E41F20;
+$secondary-color: #DD2927;
+$unselect-gradient: linear-gradient(#FFFFFF, #F5F5F5);
+$selected-gradient: linear-gradient(#E41F20, #FC7474);
+/* Sitewide */
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+ }
+ 
+
+header {
+    background-color: $primary-color;
+
+height: 80px;
+
+    #logo {
+        max-height: 80px;
+        padding: 0;
+        text-align: left;
+        img {
+            height: 58px;
+
+            margin-top: 11px;
+        }
+    }
+
+    ul  {
+        
+        li {
+            padding: 30px 0 30px 0;
+            display: inline;
+            color: white;
+            text-align: right;
+        }
+        #portfolio-link {
+          /*  margin-left: 20px; */
+        }
+    }
+}
+
+/* portfolio */
+
+.portfolio-banner {
+    text-align: center;
+    padding: 44px 0 44px 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: $primary-color;
+    font-size: 3.75rem;
+}
+
+.portfolio-box {
+    height: 126px; // keep this if you want a fixed height
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 2px 4px #a0a0a0);
+    border-radius: 14px;
+    color: $primary-color;
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(228,31,32,1) 0%, rgba(252,116,116,1) 100%);
+        color: #FFFFFF;
+    }
+}
+
+
+footer {
+    height: 243px;
+    background-color: $primary-color;
+}
