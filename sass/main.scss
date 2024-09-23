@@ -1,7 +1,23 @@
 $primary-color: #E41F20;
 $secondary-color: #DD2927;
-$unselect-gradient: linear-gradient(#FFFFFF, #F5F5F5);
-$selected-gradient: linear-gradient(#E41F20, #FC7474);
+$unselect-gradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+$selected-gradient: linear-gradient(180deg, rgba(228,31,32,1) 0%, rgba(252,116,116,1) 100%);
+@mixin white-box {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    filter: drop-shadow(0px 2px 4px #a0a0a0);
+    border-radius: 14px;
+}
+@mixin bold-color-text {
+    color: $primary-color;
+    font-weight: bold;
+}
+@mixin mobile-border-red {
+    border-bottom: solid $primary-color 6px;
+}
+@mixin margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Sitewide */
 body {
     font-family: "Roboto", sans-serif;
@@ -64,6 +80,184 @@ footer {
     background-color: $primary-color;
 }
 
+/* index */
+
+.index-banner {
+    text-align: center;
+    margin: 44px 0 44px 0;
+
+        span {
+            padding-bottom: 5px;
+        }
+}
+
+#title-main {
+    margin-top: 5px;
+}
+
+.bottom-span {
+    border-top: 0px;
+    border-bottom: solid #E41F20 6px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+.shortcut-box {
+    height: 126px;
+    background: $selected-gradient;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 2px 4px #a0a0a0);
+    border-radius: 14px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+}
+
+
+
+.main-med-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.125em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spotlight {
+    background-image: url(../images/fanshawe-idp-mobile.jpg);
+    background-size:cover;
+    height: 413px;
+        .main-med-title {
+            margin-top: 41px;
+            color: #FFFFFF;
+        }
+
+        .spotlight-text, .spotlight-text-2{
+            color: #FFFFFF;
+            font-weight: bold;
+            margin-left: 26px;
+            margin-right: 26px;
+            margin-bottom: 32px;
+        }
+}
+
+#industry-night-spotlight {
+    .spotlight-border-bottom {
+        @include mobile-border-red;
+        height: 6px;
+        margin-bottom: 20px;
+        width: 260px;
+        @include margin-center;
+        }
+}
+
+span {
+    border-top: solid #E41F20 6px;
+    margin-top: 15px;
+  }
+
+#event-border-bottom, #dev-border-bottom {
+    margin-bottom: 25px
+}
+
+#event-border-bottom {
+    @include mobile-border-red;
+    width: 233px;
+    @include margin-center;
+}
+
+.detail-box {
+    height: 167px;
+    background: $unselect-gradient;
+    margin-bottom: 37px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 2px 4px #a0a0a0);
+    border-radius: 14px;
+
+        .detail-title {
+            margin-top: 16px;
+            margin-bottom: 20px;
+            color: $primary-color;
+            font-weight: bold;
+            @include margin-center;
+        }
+        p {
+            text-align: center;
+            margin-left: 21.5px;
+            margin-right: 21.5px;
+        }
+        
+}
+
+#idp-title {
+    height: 82px;
+}
+
+#idp-spotlight {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 580px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+
+    
+}
+
+#capstone-button, #learn-more-button {
+    height: 51px;
+}
+
+#learn-more-button {
+    p {
+        margin: 0 auto;
+    }
+}
+
+#testim-border-bottom {
+    @include mobile-border-red;
+    width: 233px;
+    @include margin-center;
+    margin-bottom: 0px;
+}
+
+.testim-box {
+    height: 167px;
+    margin-top: 27px;
+    @include white-box;
+
+
+        .testim-text, .testim-name {
+            margin-left: 21px;
+            margin-right: 21px;
+            margin-top: 19px
+        }
+
+        .testim-name {
+            @include bold-color-text;
+        }
+        
+}
+
+
+
+#dev-border-bottom {
+    @include mobile-border-red;
+    width: 264px;
+    @include margin-center;
+}
+
+
 /* portfolio */
 
 #title-portfolio-s {
@@ -94,7 +288,7 @@ footer {
 
 .portfolio-box {
     height: 126px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    background: $unselect-gradient;
     margin-bottom: 34px;
     display: flex;
     justify-content: center;
@@ -106,7 +300,7 @@ footer {
     transition: transform 0.3s ease;
         
         &:hover {
-            background: linear-gradient(180deg, rgba(228,31,32,1) 0%, rgba(252,116,116,1) 100%);
+            background: $selected-gradient;
             color: #FFFFFF;
             transform: scale(1.05);
         }
@@ -164,3 +358,6 @@ footer {
 
 
   }
+
+
+
