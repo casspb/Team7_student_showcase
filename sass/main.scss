@@ -88,7 +88,6 @@ footer {
     position: relative;
     z-index: 4;
     background-color: white;
-    margin-bottom: 20px;
         span {
             padding-bottom: 5px;
         }
@@ -104,6 +103,11 @@ footer {
     margin-bottom: 20px;
     margin-top: 0px;
   }
+
+.play-button {
+    height: 18px;
+    margin-top: 20px;
+}
 
   video {
     height: 231px;
@@ -145,7 +149,7 @@ footer {
 }
 
 .spotlight {
-    background-image: url(../images/fanshawe-idp-mobile.jpg);
+    background-image: url(../images/industry-night-image-mobile.jpg);
     background-size:cover;
     height: 413px;
         .main-med-title {
