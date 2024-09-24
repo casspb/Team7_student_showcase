@@ -84,8 +84,11 @@ footer {
 
 .index-banner {
     text-align: center;
-    margin: 44px 0 44px 0;
-
+    padding: 44px 0 44px 0;
+    position: relative;
+    z-index: 4;
+    background-color: white;
+    margin-bottom: 20px;
         span {
             padding-bottom: 5px;
         }
@@ -101,6 +104,17 @@ footer {
     margin-bottom: 20px;
     margin-top: 0px;
   }
+
+  video {
+    height: 231px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    visibility: hidden;
+}
+
 
 .shortcut-box {
     height: 126px;
@@ -358,6 +372,4 @@ span {
 
 
   }
-
-
 
