@@ -62,9 +62,9 @@ header {
                 font-weight: 600;
                 }
         }
-        #portfolio-link {
-          /*  margin-left: 20px; */
-        }
+       /* #portfolio-link {
+            margin-left: 20px; 
+        }*/
     }
 }
 
@@ -105,8 +105,17 @@ footer {
   }
 
 .play-button {
-    height: 18px;
+    height: 60px;
+    width: 60px;
     margin-top: 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+        :hover {
+            filter: invert(16%) sepia(69%) saturate(5921%) hue-rotate(352deg) brightness(94%) contrast(89%);
+            transform: scale(1.05);
+        }
 }
 
   video {
