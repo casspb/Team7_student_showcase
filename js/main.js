@@ -1,6 +1,8 @@
 const player = document.querySelector('video');
 const title = document.querySelector('.index-banner');
 const playButton = document.querySelector('.play-button');
+const burgerButton = document.querySelector('.burger-button');
+const burgerMenu = document.querySelector('.burger-menu');
 
 
 function playing() {
@@ -15,10 +17,13 @@ function paused() {
 
 function playVideo() {
     player.play();
-    
 }
 
+//function burgerChecked() {
+       // burgerMenu.style.left = '0px';//
+//} //
 
 player.addEventListener("play", playing);
-player.addEventListener("pause", paused)
-playButton.addEventListener('click', playVideo)
+player.addEventListener("pause", paused);
+playButton.addEventListener('click', playVideo);
+//burgerButton.addEventListener('click', toggleBurgerMenu); //
