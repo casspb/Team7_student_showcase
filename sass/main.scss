@@ -64,7 +64,7 @@ header {
         font-size: 1.5em; 
         left: -100%;
         transition: left 0.5s ease;
-        margin-top: 30px;
+        margin-top: 54px;
         ul {
             list-style: none;
             padding: 0px;
@@ -109,6 +109,28 @@ header {
             margin-left: 20px; 
         }*/
     }
+}
+
+.fa-bars {
+    display: block;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    margin-right: 20px;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+
+#nav-btn:checked ~ ul{
+    position: absolute;
+    left: 0;
+}
+
+#nav-btn {
+    display: none;
 }
 
 h1 {
