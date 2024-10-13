@@ -70,7 +70,6 @@ header {
             padding: 0px;
     
             li {
-                padding-top: 10px;
                 border-bottom: solid rgb(236, 236, 236) 2px;
                 display: block;
                 text-align: center;
@@ -173,7 +172,7 @@ footer {
     z-index: 4;
     background-color: white;
         span {
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
         h3 {
             font-weight: 700;
@@ -184,9 +183,10 @@ footer {
 
 
 #title-main {
-    margin-top: 5px;
+    margin-top: 15px;
     span {
-        border-top: solid #000 6px
+        border-top: solid #000 6px;
+        padding-top: 10px;
     }
 }
 
