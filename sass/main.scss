@@ -476,6 +476,8 @@ span {
         font-size: 3.1rem;
         padding-bottom: 9px !important;
         margin-bottom: 62px !important;
+        max-width: 452px;
+        margin: auto;
     }
 
     
@@ -661,7 +663,7 @@ span {
 
         h1 {
             font-size: 3.75em;
-
+            max-width: unset;
         }
     }
 
