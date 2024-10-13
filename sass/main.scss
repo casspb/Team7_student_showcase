@@ -175,16 +175,24 @@ footer {
         span {
             padding-bottom: 5px;
         }
+        h3 {
+            font-weight: 700;
+            padding-top: 25px;
+        }
+        
 }
 
 
 #title-main {
     margin-top: 5px;
+    span {
+        border-top: solid #000 6px
+    }
 }
 
 .bottom-span {
     border-top: 0px;
-    border-bottom: solid #E41F20 6px;
+    border-bottom: solid #000 6px;
     margin-bottom: 20px;
     margin-top: 0px;
   }
@@ -192,7 +200,7 @@ footer {
 .play-button {
     height: 60px;
     width: 60px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: white;
     border: none;
     cursor: pointer;
@@ -239,11 +247,18 @@ footer {
     font-weight: bold;
     font-size: 2.125em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+        span {
+            border-bottom: solid #e41f20 6px;
+        }
+}
+
+#industry-night-spotlight {
+    background-image: url(../images/industry-night-image-mobile.jpg);
 }
 
 .spotlight {
-    background-image: url(../images/industry-night-image-mobile.jpg);
+    background-image: url(../images/fanshawe-idp-mobile.jpg);
     background-size:cover;
     height: 413px;
         .main-med-title {
@@ -264,7 +279,7 @@ footer {
     .spotlight-border-bottom {
         @include mobile-border-red;
         height: 6px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 260px;
         @include margin-center;
         }
@@ -289,7 +304,6 @@ span {
 }
 
 .detail-box {
-    height: 167px;
     background: $unselect-gradient;
     margin-bottom: 37px;
     justify-content: center;
@@ -301,13 +315,17 @@ span {
             margin-top: 16px;
             margin-bottom: 20px;
             color: $primary-color;
-            font-weight: bold;
+            font-weight: 600;
             @include margin-center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            padding-top: 20px;
         }
         p {
             text-align: center;
             margin-left: 21.5px;
             margin-right: 21.5px;
+            margin-bottom: 30px;
         }
         
 }
@@ -322,7 +340,7 @@ span {
     height: 580px;
 
     h2 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
 
@@ -331,6 +349,9 @@ span {
 
 #capstone-button, #learn-more-button {
     height: 51px;
+    width: 176px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #learn-more-button {
@@ -347,7 +368,6 @@ span {
 }
 
 .testim-box {
-    height: 167px;
     margin-top: 27px;
     @include white-box;
 
@@ -355,11 +375,13 @@ span {
         .testim-text, .testim-name {
             margin-left: 21px;
             margin-right: 21px;
-            margin-top: 19px
+            margin-top: 19px;
+            margin-bottom:20px;
         }
 
         .testim-name {
             @include bold-color-text;
+            margin-top: 35px;
         }
         
 }
@@ -584,6 +606,21 @@ span {
     }
 }
 
+#industry-night-spotlight {
+    .spotlight-border-bottom {
+        margin-bottom: 50px;
+    }
+}
+
+
+#idp-spotlight {
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+}
+
     /* Portfolio */
 
     .portfolio-banner {
@@ -664,21 +701,27 @@ span {
     .index-banner {
         height: 654px;
 
+        h3 {
+            padding-top: 40px;
+        }
+
         h1 {
             font-size: 5.3125em;
+            padding-bottom: 20px;
         }
         p {
             font-size: 2.125em;
             font-weight: bold;
         }
+
+        span {
+            padding-bottom: 13px;
+        }
     
         button {
             height: 80px;
             width: 80px;
-            margin-top: 50px;
-            img {
-    
-            }
+            margin-top: 40px;
         }
 
 
@@ -693,8 +736,41 @@ span {
         height: 707px;
     }
 
+    #industry-night-spotlight {
+        .spotlight-border-bottom {
+            @include mobile-border-red;
+            height: 6px;
+            width: 452px;
+            }
+            h2 {
+                padding-top: 41px;
+            }
+    }
+    
+    .detail-box {
+        height: 220px;
+        .detail-title {
+            font-size: 1.5em;
+        }
+    }
+    
     .main-med-title {
+        margin-top: 80px;
         font-size: 3.75em;
+    }
+
+    #capstone-button {
+        width: 250px;
+        margin: auto;
+        height: 80px;
+        margin-bottom: 85px;
+        font-size: 1.1em;
+
+    }
+
+    #event-border-bottom {
+        width: 416px;
+        margin-bottom: 40px;
     }
 
   .spotlight {  
@@ -710,15 +786,18 @@ span {
 
     #learn-more-button {
         margin-top: 120px;
-    }
-
-    .testim-title {
-        margin-top: 50px;
+        p {
+            font-size: 1.2rem;
+        }
     }
 
     #testim-border-bottom {
         width: 395px;
         margin-bottom: 13px;
+    }
+
+    .testim-text {
+        font-size: 1.5em;
     }
 
     .dev-title {
