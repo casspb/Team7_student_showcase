@@ -184,6 +184,7 @@ footer {
 
 #title-main {
     margin-top: 15px;
+    margin-bottom: 15px;
     span {
         border-top: solid #000 6px;
         padding-top: 10px;
@@ -398,7 +399,7 @@ span {
 /* portfolio */
 
 #title-portfolio-s {
-    font-size: 3.75rem;
+    font-size: 3.1rem;
 }
 
 #title-portfolio-l {
@@ -409,7 +410,6 @@ span {
     border-bottom:solid black 6px ;
     width: 253px;
     margin: auto;
-    margin-top: 70px;
 }
 
 #title-border-bottom {
@@ -420,7 +420,7 @@ span {
 
 .portfolio-banner {
     text-align: center;
-    margin: 44px 0 44px 0;
+    margin: 0px 0 44px 0;
 }
 
 .portfolioContainer {
@@ -457,13 +457,14 @@ span {
 
 .capstone-banner {
 
-    
+    text-align: center;
 
     #capstone-title-border-top {
         color: $primary-color;
         border-top: solid 6px #000;
         padding-top: 6px;
-        width: 203px;
+        width: 253px;
+        margin: auto;
     }
 
     h3 {
@@ -472,7 +473,7 @@ span {
 
     h1 {
         border-bottom: solid 6px #000;
-        font-size: 2.3em;
+        font-size: 3.1rem;
         padding-bottom: 9px !important;
         margin-bottom: 62px !important;
     }
@@ -623,8 +624,12 @@ span {
 
     /* Portfolio */
 
+    #title-portfolio-s { 
+        font-size: 3.75em;
+    }
+
     .portfolio-banner {
-        margin: 87px 0 87px 0;
+        margin: 0px 0 87px 0;
     }
 
     #portfolio-link {
@@ -702,8 +707,20 @@ span {
         height: 654px;
 
         h3 {
-            padding-top: 40px;
+            padding-top: 20px;
         }
+
+        #title-main {
+            span {
+                border-top: solid #000 13px;
+            }
+            margin-top: 35px;
+        }
+        
+        .bottom-span {
+            border-bottom: solid #000 13px;
+          }
+        
 
         h1 {
             font-size: 5.3125em;
@@ -815,23 +832,24 @@ span {
     }
 
     #title-portfolio-l {
-        font-size: 5.3125rem;
+        font-size: 3.75em;
         display: block;
+        padding: 20px 0px;
     }
 
     #title-border-top {
-        width: 357px;
+        width: 260px;
         border-bottom:solid black 13px ;
-        margin-left: 170px;
+        margin-left: 290px;
     }
 
     #title-border-bottom {
-        width: 831px;
+        width: 589px;
         border-bottom:solid black 13px ;
     }
 
     .portfolio-banner {
-        margin: 219px 0 219px 0;
+        margin: 0px 0 83px 0;
     }
 
     .portfolio-box {
@@ -851,13 +869,13 @@ span {
         #capstone-title-border-top {
             padding-top: 18px;
             height: 18px;
-            border-top: solid 8px #000;
+            border-top: solid 13px #000;
             width: 433px;
         }
 
         h1 {
             padding-bottom: 18px !important;
-            border-bottom: solid 8px #000;
+            border-bottom: solid 13px #000;
         }
 
   }
