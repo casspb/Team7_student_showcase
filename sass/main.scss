@@ -133,14 +133,33 @@ header {
     display: none;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: "Montserrat", sans-serif;
+    
+}
+
+h1 {
+
     font-optical-sizing: auto;
     font-weight: 800;
     color: $primary-color;
 }
 
+h2 {
+    font-size: 1.4375em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+
+main {
+    padding-top: 116px;
+}
+
 footer {
+    margin-top: 46px;
     height: 243px;
     background-color: $primary-color;
 }
@@ -148,9 +167,8 @@ footer {
 /* index */
 
 .index-banner {
-    margin-top: 80px;
     text-align: center;
-    padding: 44px 0 44px 0;
+    padding: 0px 0 44px 0;
     position: relative;
     z-index: 4;
     background-color: white;
@@ -409,8 +427,84 @@ span {
 }
 
 
+/* Capstone */
+
+.bia-tablet-image {
+    display: none;
+}
+
+.capstone-banner {
+
+    
+
+    #capstone-title-border-top {
+        color: $primary-color;
+        border-top: solid 6px #000;
+        padding-top: 6px;
+        width: 203px;
+    }
+
+    h3 {
+        color: $primary-color;
+    }
+
+    h1 {
+        border-bottom: solid 6px #000;
+        font-size: 2.3em;
+        padding-bottom: 9px !important;
+        margin-bottom: 62px !important;
+    }
+
+    
+}
+
+.student-work {
+    text-align: center;
+
+    img {
+        border-radius: 14px;
+        margin: 12px 0;
+        filter: drop-shadow(0px 2px 4px #a0a0a0);
+    }
+    margin-top: 34px;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+    
+}
+
+.capstone-separator {
+    height: 5px;
+    background-color: #000;
+    margin: 34px 0 34px 0;
+}
+
+.honourable-mention {
+    margin: auto;
+    text-align: center;
+    color: $primary-color;
+    font-weight: 800;
+}
+
  /* ---tablet Sized Screens--- */
  @media screen and (min-width: 768px) {
+
+    main {
+        padding-top: 83px;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3.75em;
+    }
+
+    h2 {
+       font-size:  1.3125em;
+    }
 
     header {
         position: relative;
@@ -451,14 +545,15 @@ span {
 
 /* index */
 
-h3 {
-    font-size: 2.125em;
-    font-weight: bold;
-}
+
 
 .index-banner {
-    padding-top: 0px;
-    margin-top: 60px;
+
+    h3 {
+        font-size: 2.125em;
+        font-weight: bold;
+    }
+
     h1 {
         font-size: 3.75em;
     }
@@ -501,14 +596,66 @@ h3 {
         }
     }
 
-    
+    /* Capstone */ 
+
+    .bia-tablet-image {
+        display: block;
+    }
+
+    .capstone-page {
+        h2 {
+            font-size: 2em;
+        }
+
+    }
+
+    .capstone-separator {
+        height: 6px;
+    }
+
+    .capstone-banner {
+
+        margin: auto;
+
+        h1 {
+            font-size: 3.75em;
+
+        }
+    }
+
+    .student-work {
+        
+        margin-top: 55px;
+
+        img {
+            margin: 25px 0;
+        }
+
+    }
+
+    .bia-tablet-image {
+        width: 100%;
+    }
 
  }
 
   /* ---desktop Sized Screens--- */
   @media screen and (min-width: 1200px) {  
 
+    footer {
+        margin-top: 137px;
+    }
+
     /* Index */
+
+    h1 {
+        font-size: 5.3125em;
+    }
+
+    h2 {
+        font-size: 3.75em;
+    }
+
     h3 {
         font-size: 2.125em;
         font-weight: bold;
@@ -516,8 +663,7 @@ h3 {
     
     .index-banner {
         height: 654px;
-        padding-top: 44px;
-        margin-top: 80px;
+
         h1 {
             font-size: 5.3125em;
         }
@@ -617,8 +763,33 @@ h3 {
     }
 
 
+    /* Capstone */
+    
+    .capstone-banner {
+
+        
+
+        #capstone-title-border-top {
+            padding-top: 18px;
+            height: 18px;
+            border-top: solid 8px #000;
+            width: 433px;
+        }
+
+        h1 {
+            padding-bottom: 18px !important;
+            border-bottom: solid 8px #000;
+        }
 
   }
+
+    .capstone-page .student-work:last-child {
+        margin: auto;
+        max-width: 598px;
+    }
+
+
+}
 
 /*         li {
             padding: 30px 0 30px 0;
