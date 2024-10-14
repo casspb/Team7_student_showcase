@@ -508,9 +508,10 @@ span {
         border-bottom: solid 6px #000;
         font-size: 3.1rem;
         padding-bottom: 9px !important;
-        margin-bottom: 62px !important;
+        margin-bottom: 62px ;
         max-width: 452px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     
@@ -738,6 +739,10 @@ span {
         font-weight: bold;
     }
     
+    .capstone-page, .portfolios-page {
+        padding-top: 172px;
+    }
+
     .index-banner {
         height: 654px;
 
@@ -884,7 +889,7 @@ span {
     }
 
     .portfolio-banner {
-        margin: 0px 0 83px 0;
+        margin: 0px 0 172px 0;
     }
 
     .portfolio-box {
@@ -911,6 +916,7 @@ span {
         h1 {
             padding-bottom: 18px !important;
             border-bottom: solid 13px #000;
+            margin-bottom: 172px;
         }
 
   }
