@@ -252,6 +252,7 @@ footer {
 
 
 .shortcut-box {
+    cursor: pointer;
     height: 126px;
     background: $selected-gradient;
     color: #FFFFFF;
@@ -375,6 +376,9 @@ span {
 
 
     
+}
+#intro-capstone{
+    font-size: 18px;
 }
 
 #capstone-button, #learn-more-button {
