@@ -381,6 +381,7 @@ span {
 }
 #intro-capstone{
     font-size: 18px;
+    padding: 40px 0;
 }
 
 #capstone-button, #learn-more-button {
@@ -679,6 +680,9 @@ span {
     }
 
     /* Capstone */ 
+    #intro-capstone{
+        padding: 20px 0;
+    }
 
     .bia-tablet-image {
         display: block;

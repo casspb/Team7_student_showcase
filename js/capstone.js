@@ -9,12 +9,11 @@ sections.forEach((section) => {
         ease: "power1.out", // Easing for a smooth transition
         scrollTrigger: {
             trigger: section,
-            start: "top 50% ", // Start the animation when the top of the section is at 80% of the viewport height
-            end: "top 30%", // End the animation when the top of the section reaches 30% of the viewport height
-            scrub: true, // Smoothly animate as you scroll
-            pin: true, // Pin the section
-            pinSpacing: true, // Allow space to be added for the pinned element
-            markers: true // Enable markers for debugging
+            start: "top 50% ", 
+            end: "top 30%", 
+            scrub: true, 
+            pin: true, 
+            pinSpacing: true, 
         }
     });
 });
