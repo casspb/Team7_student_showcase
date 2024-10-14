@@ -162,7 +162,7 @@ footer {
     justify-content: center;       
     align-items: center; 
     margin-top: 46px;
-    height: 243px;
+    min-height: 243px;
     background-color: $primary-color;
 
     p{
@@ -177,6 +177,11 @@ footer {
     height: 60px;
     margin-left: 20px;
     margin-top: 20px;
+}
+
+#facebook-logo{
+    margin-bottom: -4px;
+    height: 68px;
 }
 
 .fanshawe-footer-logo{
@@ -250,6 +255,7 @@ footer {
     height: 126px;
     background: $selected-gradient;
     color: #FFFFFF;
+    margin-top: 10px;
     margin-bottom: 34px;
     display: flex;
     justify-content: center;
