@@ -2,6 +2,12 @@
  const player = document.querySelector('video');
  const title = document.querySelector('.index-banner');
  const playButton = document.querySelector('.play-button');
+ let scrollContainer = document.querySelector(".stdnt-work-gallery");
+
+ //gallery variables
+let backBtn = document.querySelector('#back-button');
+let forwardBtn = document.querySelector('#forward-button');
+let firstImage = document.querySelector('.stdnt-work-gallery img');
 
  // Functions to control video play/pause visibility
  function playing() {
@@ -18,10 +24,29 @@
      player.play();
  }
 
+ // Gallery funtions //
+
+ function getImageWidth() {
+    return firstImage.offsetWidth + 20;
+}
+
+function backButton() {
+scrollContainer.scrollLeft -= getImageWidth();
+}
+
+function forwardButton() {
+    scrollContainer.scrollLeft += getImageWidth();
+    }
+
+
  // Video event listeners
  player.addEventListener("play", playing);
  player.addEventListener("pause", paused);
  playButton.addEventListener('click', playVideo);
+ 
+ //gallery event listeners
+ backBtn.addEventListener("click", backButton);
+forwardBtn.addEventListener("click", forwardButton);
 
  // GSAP and ScrollToPlugin registration
  gsap.registerPlugin(ScrollToPlugin);
