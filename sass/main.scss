@@ -138,8 +138,6 @@ h1, h2, h3 {
 }
 
 h1 {
-
-    font-optical-sizing: auto;
     font-weight: 800;
     color: $primary-color;
 }
@@ -244,11 +242,10 @@ footer {
 
   video {
     height: 231px;
-    object-fit: cover;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 100px;
+    top: 140px;
     visibility: hidden;
 }
 
@@ -374,6 +371,10 @@ span {
 
     h2 {
         margin-bottom: 30px;
+        border-bottom: solid #e41f20 6px;
+        width: 253px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
@@ -795,6 +796,7 @@ span {
     
     video {
         height: 654px;
+        top: 100px;
     }
 
     #industry-night-spotlight {
@@ -835,7 +837,7 @@ span {
 
     #event-border-bottom {
         width: 416px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
   .spotlight {  
@@ -847,6 +849,11 @@ span {
 
     #idp-spotlight {
         height: 979px;
+
+        h2 {
+            width: 436px;
+        }
+
     }
 
     #learn-more-button {
@@ -858,7 +865,7 @@ span {
 
     #testim-border-bottom {
         width: 395px;
-        margin-bottom: 13px;
+        margin-bottom: 33px;
     }
 
     .testim-text {
@@ -866,11 +873,11 @@ span {
     }
 
     .dev-title {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     #dev-border-bottom {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         width: 464px;
     }
     /* Portfolio */
