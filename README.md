@@ -22,5 +22,5 @@ A website made to show off the Fanshawe Industry Night 2025, featuring a title p
 MIT licence
 
 ## Acknowledgment
-Deigo Rodriguez-Ramos
+Deigo Rodriguez-Ramos and
 Cassidy Pelacek-Boutilier
