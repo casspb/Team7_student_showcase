@@ -65,7 +65,7 @@ forwardBtn.addEventListener("click", forwardButton);
                  targetId = "#idp-spotlight"; 
                  break;
              case 2:
-                 targetId = "#testim-border-top"; 
+                 targetId = ".testimonial-spotlight"; 
                  break;
              case 3:
                  targetId = ".dev-title"; 
