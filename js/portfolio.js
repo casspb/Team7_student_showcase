@@ -1,5 +1,7 @@
 (() => {
-    const portfolioContainer = document.getElementById('portfolioContainer');
+   //seperated to have easier acess to the class list array
+  
+  const portfolioContainer = document.getElementById('portfolioContainer');
   
     const studentNames = [ "Diego Rodriguez-Ramos",
       "Kayla Cooper",
@@ -81,7 +83,7 @@
     portfolioBox.classList.add('portfolio-box', 'col-span-2', 'm-col-span-3'); // Each box spans 2 columns
     portfolioBox.innerHTML = `<p>${student}</p>`; // Add the student's name
   
-    // Append the portfolio box to the container
+    // Append the portfolio box to the container so that the portfolio box becomes part of the container and adds it to the DOM and becomes visable
     portfolioContainer.appendChild(portfolioBox);
   });
   
